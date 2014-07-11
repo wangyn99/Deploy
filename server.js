@@ -1,3 +1,5 @@
+//这个是Node.js应用的入口文件，在app.conf里面有设置
+//百度BAE对监听的端口有规定，必须是１８０８０
 var http = require('http');
 var port = 18080;
 http.createServer(function(req, res) {
