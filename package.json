@@ -1,3 +1,5 @@
+//应该就是json这里的配置问题，
+//入口文件应该bundle之后的main.js文件
 {
     "name": "bae-nodejs",
     "version": "1.0.0",
@@ -5,8 +7,12 @@
     "description": "The first bae nodejs app!",
     "scripts": {
         "start": "node server.js"
+        ／／这里应该是"start": "node main.js"
     },
     "dependencies": {
+        ／／包依赖这里应该是meteor对应的版本
+        ／／但是meteor本身又存在很多meteor 包和npm包的依赖
+        ／／我把meteor application bundle之后的json文件放到这里也不行，不知道怎么配置了
     }
 }
 
